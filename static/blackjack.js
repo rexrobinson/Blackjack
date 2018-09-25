@@ -1,4 +1,4 @@
-var root = "/C:/Users/NEO/Desktop/app/static/cards/" 
+var root = "/static/media/cards/" 
 var back = root + "back.jpg";
 var myDeck = {}
 var deckList = []
