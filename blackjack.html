@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>RSisters Blackjack</title>
+  <meta charset="utf-8"/>
+  <script src="/C:/Users/NEO/Desktop/app/static/blackjack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/C:/Users/NEO/Desktop/app/static/blackjack.css">
+
+  <audio id="placeCard">
+    <source src="/C:/Users/NEO/Desktop/cardPlace2.wav" type="audio/mpeg">
+  </audio>
+
+  <audio id="lose">
+    <source src="/C:/Users/NEO/Desktop/lose.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="clap">
+    <source src="/C:/Users/NEO/Desktop/clap.mp3" type="audio/mpeg">
+  </audio>  
+</head>
+
+  <body onload="genDeck();deal();">
+    <div id="main">
+      <div class="row">
+        <div class="tbanner" id="tbanner">
+          <p id="result" class="bannerText"></p>
+        </div>
+        <div class="fbanner" id="fbanner"></div>
+        <div class="lcolumn" id="lcolumn">
+          <div class = "score">
+            <p class="scoreText">Dealer Score</p>
+            <p id="dscore" class="scoreText"></p>
+          </div>  
+        </div>
+        <div class="rcolumn" id="rcolumn">
+          <div class = "score">
+            <p class="scoreText">Player Score</p>
+            <p id="yscore" class="scoreText"></p>
+          </div>        
+          <button id="call" class="button" onclick="call()">HOLD</button>
+          <button id="new" class="newButton" onclick="restart()">NEW GAME</button> 
+        </div>
+        <div class="topBoard" id="dealer"></div>
+        <div class="bottomBoard" id="player"></div>
+     </div>
+    </div>  
+  </body>
+  
+</html>
